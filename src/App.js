@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 
 import TodoList from "./components/TodoComponents/TodoList";
 import TodoForm from "./components/TodoComponents/TodoForm";
+import "./components/TodoComponents/Todo.css"
+
+
 
 
 const toDoData = [
@@ -40,10 +43,12 @@ class App extends React.Component {
    };
  }
 
+
+
 toggleTask = id => {
   console.log(id);
   this.setState({
-    todo: this.state.toDoData.map(task => {
+    todo: this.state.todo.map(task => {
       if (task.id === id) {
         return {
           ...task,
@@ -84,7 +89,9 @@ clearCompleted = () => {
         <TodoList
           todo={this.state.todo}
           toggleTask={this.toggleTask}
+          clearCompleted={this.clearCompleted}
         />
+        <h1>Hello World</h1>
       </div>
     );
   }
