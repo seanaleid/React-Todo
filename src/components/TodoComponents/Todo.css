@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  background-color: #2d2d37;
+  background-color: #fff;
 }
 
 h1,
@@ -20,7 +20,7 @@ h6,
 div,
 p,
 span {
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -28,10 +28,10 @@ span {
 .App {
   font-family: sans-serif;
   text-align: center;
-  padding: 0 36px;
-  max-width: 665px;
+  padding: 0 10px;
+  max-width: 100%;
   margin: 0 auto;
-  background-color: #2d2d37;
+  background-color: #fff;
 }
 
 .header {
@@ -51,7 +51,7 @@ h2 {
   margin: 0 auto;
 }
 .task {
-  background-color: #e64944;
+  background-color: #fff;
   width: 45%;
   text-align: left;
   margin: 4px 0;
@@ -59,7 +59,7 @@ h2 {
 }
 
 .task.completed {
-  background-color: #d17d7c;
+  background-color: #00FFFF;
   text-decoration: line-through;
 }
 form {
@@ -68,27 +68,27 @@ form {
   justify-content: flex-end;
 }
 form > input {
-  background-color: #2d2d37;
+  background-color: #fff;
   border: 0;
   padding: 6px 0;
   font-size: 1rem;
   width: 240px;
   outline: 0;
-  color: white;
-  border-bottom: 1px solid #e64944;
+  color: black;
+  border-bottom: 1px solid #00FFFF;
   margin-right: 8px;
 }
 
 button {
-  background-color: #e64944;
-  border: 1px solid #e64944;
-  color: white;
+  background-color: #00FFFF;
+  border: 1px solid #00FFFF;
+  color: black;
   font-size: 16px;
   padding: 6px 14px;
 }
 
 input::placeholder {
-  color: #e64944;
+  color: #00FFFF;
   opacity: 1;
 }
 

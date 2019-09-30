@@ -1,35 +1,12 @@
 import React from 'react';
-import ReactDOM from "react-dom";
 
 import TodoList from "./components/TodoComponents/TodoList";
 import TodoForm from "./components/TodoComponents/TodoForm";
+import Navigation from "./components/TodoComponents/NavBar";
 import "./components/TodoComponents/Todo.css"
 
 
-
-
-const toDoData = [
-  {
-    task: 'Organize Garage',
-    id: 1528817077286,
-    completed: false
-  },
-  {
-    task: 'Bake Cookies',
-    id: 1528817084358,
-    completed: false
-  },
-  {
-    task: 'Walk The Dog',
-    id: 1528817094358,
-    completed: false
-  },
-  {
-    task: 'Clean The Car',
-    id: 1528817097358,
-    completed: false
-  },
-];
+const toDoData = [];
 
 class App extends React.Component {
   // you will need a place to store your state in this component.
@@ -82,8 +59,8 @@ clearCompleted = () => {
   render() {
     return (
       <div className="App">
+        <Navigation/>
         <div className="header">
-          <h2>Welcome to your Todo App!</h2>
           <TodoForm addTask={this.addTask} />
         </div>
         <TodoList
@@ -91,7 +68,6 @@ clearCompleted = () => {
           toggleTask={this.toggleTask}
           clearCompleted={this.clearCompleted}
         />
-        <h1>Hello World</h1>
       </div>
     );
   }
